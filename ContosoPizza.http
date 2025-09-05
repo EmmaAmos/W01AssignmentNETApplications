@@ -1,0 +1,40 @@
+// ContosoPizza.http was not part of the original setup, the following is made by me in an attempt to follow the instructions
+### Base URL for ContosoPizza API
+@baseUrl = https://localhost:5001
+
+### Get all pizzas
+GET @baseUrl/pizza
+Accept: application/json
+
+### Get a specific pizza by ID
+GET @baseUrl/pizza/{{id}}
+Accept: application/json
+
+### Add a new pizza
+POST @baseUrl/pizza
+Content-Type: application/json
+{
+    "name": "New Pizza",
+    "isGlutenFree": false
+}
+
+### Update an existing pizza
+PUT @baseUrl/pizza/{{id}}
+Content-Type: application/json
+{
+    "name": "Updated Pizza",
+    "isGlutenFree": true
+}
+
+### Delete a pizza
+DELETE @baseUrl/pizza/{{id}}
+GET {{ContosoPizza_HostAddress}}/pizza/
+Accept: application/json
+
+
+### The Following will be from the instructions
+
+GET {{ContosoPizza_HostAddress}}/pizza/
+Accept: application/json
+
+###
