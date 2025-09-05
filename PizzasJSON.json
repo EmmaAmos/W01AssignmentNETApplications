@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Fri, 02 Apr 2021 21:57:57 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "name": "Classic Italian",
+        "isGlutenFree": false
+    },
+    {
+        "id": 2,
+        "name": "Veggie",
+        "isGlutenFree": true
+    },
+    {
+        "id": 3,
+        "name": "Pepperoni",
+        "isGlutenFree": false
+    },
+    {
+        "id": 4,
+        "name": "BBQ Chicken",
+        "isGlutenFree": false
+    },
+    {
+        "id": 5,
+        "name": "Margherita",
+        "isGlutenFree": true
+    }
+]
