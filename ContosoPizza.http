@@ -2,35 +2,8 @@
 ### Base URL for ContosoPizza API
 @baseUrl = https://localhost:5001
 
-### Get all pizzas
-GET @baseUrl/pizza
-Accept: application/json
 
-### Get a specific pizza by ID
-GET @baseUrl/pizza/{{id}}
-Accept: application/json
-
-### Add a new pizza
-POST @baseUrl/pizza
-Content-Type: application/json
-{
-    "name": "New Pizza",
-    "isGlutenFree": false
-}
-
-### Update an existing pizza
-PUT @baseUrl/pizza/{{id}}
-Content-Type: application/json
-{
-    "name": "Updated Pizza",
-    "isGlutenFree": true
-}
-
-### Delete a pizza
-DELETE @baseUrl/pizza/{{id}}
-GET {{ContosoPizza_HostAddress}}/pizza/
-Accept: application/json
-
+//this section has been delected an replaced with items from the instructions
 
 ### The Following will be from the instructions
 
@@ -38,3 +11,33 @@ GET {{ContosoPizza_HostAddress}}/pizza/
 Accept: application/json
 
 ###
+
+### Create a new pizza using the API
+POST @baseUrl/pizza
+Content-Type: application/json
+{
+    "name": "Sample Pizza",
+    "isGlutenFree": false
+}
+
+### Update a pizza using the API
+PUT @baseUrl/pizza/{{id}}
+Content-Type: application/json
+{
+    "name": "Updated Pizza Name",
+    "isGlutenFree": true
+}
+
+### Update a pizza using the API with HttpPut
+PUT @baseUrl/pizza/{{id}}
+Content-Type: application/json
+{
+    "id": 1,
+    "name": "Updated Pizza Name",
+    "isGlutenFree": true
+}
+
+### Delete a pizza using the API
+DELETE @baseUrl/pizza/{{id}
+}
+
